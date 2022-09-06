@@ -1,0 +1,38 @@
+body{
+    background: #040f1a;
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  .jumbotron{padding:20%;color:white;}
+body{font-family: 'Kumbh Sans', sans-serif;}
+p{padding:10px;}
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: #ffffff;
+  border: 10px solid #f2f2f2;
+}
+
+h1{
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+}
+.img-circle{
+    width: 95%;
+}
+@media screen and (max-width: 1440px) {
+    body{
+        max-width: 75%;
+    }
+    .img-circle{
+        transform: translateY(-550%);
+    }
+    .about-me{
+       transform: translateY(15%);
+    }
+    
+}
