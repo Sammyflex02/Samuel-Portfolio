@@ -12,34 +12,36 @@
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
 <link rel="manifest" href="./favicon/site.webmanifest">
 <link rel="stylesheet" href="./style.css">
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
+  
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
     <!-- Navbar section -->
     <section>
     <header>
-    <nav class="navbar navbar-expand-lg container navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-expand-lg container navbar-fixed-top topnav fixed-top bg-dark shadow-sm navbar-custom" role="navigation">
         <div class="container-fluid">
-          <a class="navbar-brand text-primary bg-dark" href="#"><span class="text-danger">SAM</span>UEL</a>
+          <a class="navbar-brand text-primary bg-dark" href="#"><span class="text-danger">SAM</span>MY</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
-            <ul class=" navbar-nav">
+            <ul class=" navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active text-success" aria-current="page" href="#home">HOME</a>
+                <a class="nav-link active text-info" aria-current="page" href="#home">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-success" aria-current="page" href="#about">ABOUT</a>
+                <a class="nav-link active text-info" aria-current="page" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-success" aria-current="page" href="#skills">SKILLS</a>
+                <a class="nav-link active text-info" aria-current="page" href="#skills">SKILLS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-success" aria-current="page" href="#projects">PROJECTS</a>
+                <a class="nav-link active text-info" aria-current="page" href="#projects">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-success" aria-current="page" href="#contact">CONTACT</a>
+                <a class="nav-link active text-info" aria-current="page" href="#contact">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -48,12 +50,12 @@
   </section>
   <!-- Home section -->
   <section>
-    <div class="container-fluid container text-left jumbotron">
+    <div class="container-fluid container text-left jumbotron aos-init aos-animate" data-aos="zoom-in-up">
       <a name="home"></a>
-      <div class="row">
+      <div class="row aos-init aos-animate" data-aos="zoom-in-up">
       <h1>Hi there!</h1>
-      <h1>I'm<mark>Samuel</mark>David,</h1> </h1><br>
-      <p class="lead">Frontend web developer</p>
+      <h1>I'm Samuel David,</h1> <br>
+      <p class="lead text-center">Frontend web developer</p>
     </div> 
     </div>
   </section>
@@ -63,20 +65,20 @@
       <a name="about"></a>
       <div class="about-me">
       <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center"><mark>About Me</mark></h2>
+        <div class="col-md-12" >
+          <h2 class="text-center">About Me</h2>
            <hr>
         </div>
         <div class="row">
-        <div class="col-md-7 my-5 about-me">
+        <div class="col-md-7 my-5 about-me aos-init" data-aos="fade-right about-me">
           <p>Hi, Am samuel. A frontend developer, graphic designer, CAD designer and also a final year student of mechanical engineering based in Kaduna, Nigeria.</p><br>
           <p>I am a creative individual with passion for software development.</p><br>
           <p>I love playing video games, doing graphic designs & watching movies too. Outside Programming, I enjoy playing around with electronics</p>
         </div>
       
         
-        <div class="col-md-5">
-        <img class="img-circle" src="./my photo/my image.png" alt="img-re">
+        <div class="col-md-5 aos-init" data-aos="fade-right">
+        <img class="border border-primary img-circle rounded-circle bg-primary w-75" src="./my photo/my image.png" alt="profile-image">
         </div>
       </div>
     </div>
@@ -88,16 +90,17 @@
       <div class="container-fluid container">
         <a name="skills"></a>
         <div class="row">
-            <h2 class="text-center my-5"><mark>Skills</mark></h2>
+            <h2 class="text-center my-5">Skills</h2>
            <hr>
-           <h5>
+           <h5 class="aos-init" data-aos="fade-left">
             My main area of expertise is frontend web development.</h5><br>
-            <h5>Here are some of the technologies I have been working with Recently:</h5>
-            <ul class="my-5">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JS</li>
-              <li>REACT</li>
+            <h5  class="aos-init" data-aos="fade-left">Here are some of the technologies I have been working with Recently:</h5>
+            <ul class="my-5 aos-init" data-aos="fade-left">
+              
+              <li>HTML <span><img class="icon bg-light" src="./Icons/html5.svg" alt="html-icon"></span></li><br>
+              <li>CSS <span><img class="icon bg-light" src="./Icons/css3.svg" alt="css-icon"></span></li><br>
+              <li><span><img class="icon bg-light" src="./Icons/js.svg" alt="js-icon"></span></li><br>
+              <li>BOOTSTRAP <span><img class="icon bg-light" src="./Icons/bootstrap.svg" alt="bootstrap-icon"></span></li>
             </ul>
           </div>
       </div>
@@ -107,40 +110,61 @@
       <div class="container-fluid container">
         <a name="projects"></a>
         <div class="row">
-        <h2 class="text-center my-5"><mark>Projects</mark></h2>
+        <h2 class="text-center my-5">Projects</h2>
            <hr>
-           <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card bg-success"  style="width: 18rem;">
-                <img src="./project images/desktop-design1.jpg" class="card-img-top" alt="img-fluid">
-                <div class="card-body">
+           <div class="row" >
+            <div class="col-md-4 mb-4 aos-init" data-aos="fade-right">
+              <div class="card bg-success">
+                <img src="./project images/desktop-design1.jpg" class="card-img-top" alt="desktop-design1">
+                <div class="card-body ">
                   <h5 class="card-title text-dark">STATS PREVIEW CARD</h5><hr>
                   <p class="card-text text-dark">A challenge picked from frontend mentor.</p>
-                  <a href="https://github.com/Sammyflex02/Stats-Preview-Card" target="_blank" class="btn btn-primary">Check project</a>
+                  <div class="row">
+                    <div class="text-center">
+                      <a href="https://github.com/Sammyflex02/Stats-Preview-Card" target="_blank" class="btn btn-primary">Check project</a>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card bg-success" style="width: 18rem;">
-                <img src="./project images/desktop-design.jpg" class="card-img-top" alt="...">
+            <div class="col-md-4 mb-4 aos-init"  data-aos="fade-right">
+              <div class="card bg-success">
+                <img src="./project images/desktop-design.jpg" class="card-img-top" alt="desktop-design">
                 <div class="card-body">
                   <h5 class="card-title text-dark">SINGLE PRICE GRID</h5><hr>
                   <p class="card-text text-dark">A challenge picked from frontend mentor.</p>
-                  <a href="https://github.com/Sammyflex02/single-price-grid" target="_blank" class="btn btn-primary">Check project</a>
+                  <div class="row">
+                    <div class="text-center">
+                      <a href="https://github.com/Sammyflex02/single-price-grid" target="_blank" class="btn btn-primary">Check project</a>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card bg-success" style="width: 18rem;">
-                <img src="./project images/screenshot.jpg" class="card-img-top" alt="...">
+            <div class="col-md-4 mb-4 aos-init"  data-aos="fade-right">
+              <div class="card bg-success">
+                <img src="./project images/screenshot.jpg" class="card-img-top" alt="project-image">
                 <div class="card-body">
                   <h5 class="card-title text-dark">3-COLUMN CARD</h5><hr>
                   <p class="card-text text-dark">A challenge picked from frontend mentor.</p>
-                  <a href="https://github.com/Sammyflex02/3-column-preview-card" target="_blank" class="btn btn-primary">Check project</a>
+                  <div class="row">
+                    <div class="text-center">
+                      <a href="https://github.com/Sammyflex02/3-column-preview-card" target="_blank" class="btn btn-primary">Check project</a>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
            </div>
+           <div class="row">
+            <div class="text-center">
+              <a href="https://github.com/Sammyflex02?tab=repositories" target="_blank" class="btn btn-outline-primary fw-5">Load more projects</a>
+            </div>
+           </div>
+           
           </div>
       </div>
     </section>
@@ -148,46 +172,34 @@
     <section>
       <div class="container-fluid container">
         <a name="contact"></a>
-        <h2 class="text-center my-5"><mark>Contacts</mark></h2>
+        <h2 class="text-center my-5">Contacts</h2>
            <hr>
-           <div class="form-box">
-            <h1 class="text-dark">Contact Me</h1>
-            <form action="https://api.formbucket.com/f/c2K3QTQ" method="post"></form>
-              <div class="form-group">
-                <label class="text-dark" for="name">Name</label>
-                <input class="form-control" id="name" type="text" name="Name"><br>
-              </div>
-              <div class="form-group">
-                <label class="text-dark" for="email">Email</label>
-                <input class="form-control" id="email" type="email" name="Email"><br>
-              </div>
-              <div class="form-group">
-                <label class="text-dark" for="message">Message</label>
-                <textarea class="form-control" id="message" name="Message"></textarea><br>
-              </div>
-              <input class="btn btn-primary" type="submit" value="Submit" />
-              </div>
-            </form> <br>
-          </div>
+           <h2 class="description text-center">Feel free to contact me if you need any assistance, any help or another question.
+           </h2><br>
+           <div class="row">
+            <div class="mb-3 text">
+                <div class="text-center">
+                    <a href="mailto:davidsamuel278@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="btn btn-outline-primary fw-5">Mail me</a>
+                </div>
+            </div>
+        </div>
+        </div><br>
         </section>
         <!-- Footer section -->
         <section>
-          <footer class="container-fluid text-center" >
-                                                                                      
-            
-            
+          <footer class="container-fluid text-center">      
             <!-- BUTTONS SETION -->
-              <a href="https://twitter.com/Sammyflex02" target="--blank"><button type="button" class="btn btn-danger"><span><img src="./Icons/twitter.svg" alt=""></span><i class="fa-brands fa-twitter"></i>
-        Twitter</button></a>
+              <a href="https://twitter.com/Sammyflex02"target="--blank"><button type="button" class="btn btn-primary rounded-pill"><span><img class="icon" src="./Icons/twitter.svg" alt="twitter-icon"></span><i class="fa-brands fa-twitter"></i></button></a>
         
             
-          <a href="https://github.com/Sammyflex02" target="--blank"><button type="button" class="btn btn-danger"><span><img class="w-25%" src="./Icons/github.svg" alt=""></span><i class="fa-brands fa-github"></i>
-        Github</button></a>
+          <a href="https://github.com/Sammyflex02" target="--blank"><button type="button" class="btn btn-primary rounded-pill"><span><img class="icon" src="./Icons/github.svg" alt="github-icon"></span><i class="fa-brands fa-github"></i>
+        </button></a>
             
           <a href="https://www.linkedin.com/in/samuel-david-044437135/
-          trk=nav_responsive_tab_profile" target="--blank"><button type="button" class="btn btn-danger"><span><img src="./Icons/linkedin.svg" alt="linkedin"></span><i class="fa-brands fa-linkedin"></i>
-        LinkedIn</button></a>                               
-          <p class="pull-down">Written and coded by <a href="https://twitter.com/Sammyflex02" target="--blank"><span style="color:#939897;">Samuel David</span></p></a>         
+          trk=nav_responsive_tab_profile" target="--blank"><button type="button" class="btn btn-primary rounded-pill"><span><img class="icon" src="./Icons/linkedin.svg" alt="linkedin-icon"></span><i class="fa-brands fa-linkedin"></i>
+        </button></a><br><br>                             
+          <p class="pull-down">Written and coded by me <a href="https://twitter.com/Sammyflex02" target="--blank"><span style="color:#939897;">@ Samuel David, 2022</span></p></a>
+                   
                              
         </footer>
       </section>
@@ -195,6 +207,12 @@
 
       
    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1200,});
+    </script>
+
   </body>
 </html>

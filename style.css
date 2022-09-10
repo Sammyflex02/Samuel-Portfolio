@@ -3,7 +3,7 @@ body{
     color: #fff;
     font-family: 'Kumbh Sans', sans-serif;
   }
-  .jumbotron{padding:20%;color:white;}
+  .jumbotron{padding:10%;color:white;}
 body{font-family: 'Kumbh Sans', sans-serif;}
 p{padding:10px;}
 .form-box {
@@ -24,15 +24,18 @@ input, textarea {
 .img-circle{
     width: 95%;
 }
+.icon{
+  width: 1.5rem;
+}
 @media screen and (max-width: 1440px) {
     body{
-        max-width: 75%;
+        max-width: 95%;
     }
     .img-circle{
-        transform: translateY(-550%);
+        transform: translateY(-400%);
     }
     .about-me{
-       transform: translateY(15%);
+       transform: translateY(32%);
     }
     
 }
